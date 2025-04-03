@@ -7,7 +7,7 @@ terraform {
     }
 
     backend "s3" {
-      bucket = "sai-tf-remote-state"
+      bucket = "sai-tf-state-remote"
       key = "vpc-module-test" # yo should have unique keys within the bucket, same keys should not be used in others repo or tf floders
       region = "us-east-1"
       dynamodb_table = "sai-tf-state-locking"
